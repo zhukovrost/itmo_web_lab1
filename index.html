@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeckShop — магазин игральных карт</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <img src="img/logo.png" alt="Логотип DeckShop" class="logo__img">
+        <span class="logo__text">Deck<span class="logo__accent">Shop</span></span>
+      </a>
+
+      <div class="header__actions">
+        <button type="button" class="icon-btn icon-btn--cart" aria-label="Корзина">
+          <img src="img/shopping-cart.png" alt="" class="icon--cart">
+          <span class="cart-badge">3</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="catalog" id="catalog">
+      <div class="container">
+
+        <div class="section-head">
+          <h2 class="section-title">Каталог товаров</h2>
+          <p class="section-subtitle">Выберите свою колоду</p>
+        </div>
+        
+
+        <div class="filters">
+          <button type="button" class="chip chip--active">Все</button>
+          <button type="button" class="chip">Классические</button>
+          <button type="button" class="chip">Дизайнерские</button>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <div class="card__media">
+              <img src="img/decks/bicycle-standard.png" alt="Колода Bicycle Classic 808" class="card__img">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Bicycle Classic 808</h3>
+              <p class="card__desc">Легендарная классическая колода, 52 карты + 2 джокера. Тиснение «Air-Cushion».</p>
+              <div class="card__price">
+                <span class="price">590&nbsp;₽</span>
+                <span class="price price--old">690&nbsp;₽</span>
+              </div>
+              <button type="button" class="btn btn--cart">
+                Добавить в корзину
+              </button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img src="img/decks/monarchs.png" alt="Колода Theory11 Monarchs" class="card__img">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Theory11 Monarchs</h3>
+              <p class="card__desc">Премиальная колода с золотым тиснением. Высокое качество бумаги и печати.</p>
+              <div class="card__price">
+                <span class="price">1&nbsp;190&nbsp;₽</span>
+              </div>
+              <button type="button" class="btn btn--cart">
+                Добавить в корзину
+              </button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img src="img/decks/bee.png" alt="Колода Bee Original" class="card__img">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Bee Original</h3>
+              <p class="card__desc">Классика казино: стандартное покрытие, прочная бумага, без изменённых карт.</p>
+              <div class="card__price">
+                <span class="price">540&nbsp;₽</span>
+              </div>
+              <button type="button" class="btn btn--cart">
+                Добавить в корзину
+              </button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img src="img/decks/tally-ho.png" alt="Колода Tally-Ho Blue" class="card__img">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Tally-Ho Blue</h3>
+              <p class="card__desc">Для покера и фокусов: мягкая пластиковая пленка, лёгкое скольжение.</p>
+              <div class="card__price">
+                <span class="price">620&nbsp;₽</span>
+              </div>
+              <button type="button" class="btn btn--cart">
+                Добавить в корзину
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <a href="#" class="logo logo--footer">
+          <span class="logo__text">Deck<span class="logo__accent">Shop</span></span>
+        </a>
+        <p class="footer__about">Магазин игральных карт с 2026 года.</p>
+        <p class="footer__copyright">© 2026 DeckShop. Жуков Ростислав Сергеевич</p>
+      </div>
+
+      <div class="footer__contacts">
+        <h4 class="footer__title">Контакты</h4>
+        <a href="mailto:rosf.zhukov@mail.ru" class="footer__link">rosf.zhukov@mail.ru</a>
+        <a href="tel:+78005553535" class="footer__link">8 800 555-35-35</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
