@@ -129,5 +129,37 @@
     </div>
   </footer>
 
+  <div class="modal" id="orderModal">
+    <div class="modal__dialog">
+      <button type="button" class="modal__close" data-close aria-label="Закрыть">&times;</button>
+
+      <h2 class="modal__title">Оформление заказа</h2>
+
+      <form id="orderForm" class="order-form">
+        <label class="order-form__field">
+          <span>Имя</span>
+          <input type="text" name="firstname" placeholder="Иван" required>
+        </label>
+        <label class="order-form__field">
+          <span>Фамилия</span>
+          <input type="text" name="lastname" placeholder="Иванов" required>
+        </label>
+        <label class="order-form__field">
+          <span>Адрес доставки</span>
+          <input type="text" name="address" placeholder="г. Санкт-Петербург, ул. Ломоносова, 9" required>
+        </label>
+        <label class="order-form__field">
+          <span>Контактный номер телефона</span>
+          <input type="tel" name="phone" placeholder="8 900 000-00-00" required>
+        </label>
+
+        <button type="submit" class="btn btn--primary order-form__submit">Создать заказ</button>
+      </form>
+
+      <p class="modal__success" id="orderSuccess" hidden>Заказ создан!</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

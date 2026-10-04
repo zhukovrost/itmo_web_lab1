@@ -347,6 +347,115 @@ button {
   color: #8b91a0;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 200;
+  background: rgba(35, 39, 47, 0.5);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal--open {
+  display: flex;
+}
+
+.modal__dialog {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: 0 20px 50px rgba(35, 39, 47, 0.3);
+}
+
+.modal__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  font-size: 22px;
+  line-height: 32px;
+  color: var(--color-muted);
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.modal__close:hover {
+  background: #f3ede1;
+  color: var(--color-ink);
+}
+
+.modal__title {
+  font-size: 24px;
+  margin-bottom: 22px;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.order-form[hidden],
+.modal__success[hidden] {
+  display: none;
+}
+
+.order-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.order-form__field input {
+  font: inherit;
+  padding: 11px 14px;
+  color: var(--color-ink);
+  background: #fff;
+  border: 1px solid #d6ccbb;
+  border-radius: 10px;
+  transition: border-color 0.2s;
+}
+
+.order-form__field input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.order-form__submit {
+  width: 100%;
+  margin-top: 6px;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: #8c1424;
+}
+
+.modal__success {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #2f8f5b;
+  padding: 28px 0;
+}
 
 @media (max-width: 992px) {
   .grid {
@@ -395,6 +504,10 @@ button {
 
   .card__media {
     height: 240px;
+  }
+
+  .modal__dialog {
+    padding: 20px;
   }
 
   .footer__inner {
