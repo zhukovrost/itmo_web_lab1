@@ -17,7 +17,7 @@
       <div class="header__actions">
         <button type="button" class="icon-btn icon-btn--cart" aria-label="Корзина">
           <img src="img/shopping-cart.png" alt="" class="icon--cart">
-          <span class="cart-badge">3</span>
+          <span class="cart-badge" hidden></span>
         </button>
       </div>
     </div>
@@ -51,7 +51,7 @@
                 <span class="price">590&nbsp;₽</span>
                 <span class="price price--old">690&nbsp;₽</span>
               </div>
-              <button type="button" class="btn btn--cart">
+              <button type="button" class="btn btn--cart" data-id="bicycle" data-title="Bicycle Classic 808" data-price="590">
                 Добавить в корзину
               </button>
             </div>
@@ -67,7 +67,7 @@
               <div class="card__price">
                 <span class="price">1&nbsp;190&nbsp;₽</span>
               </div>
-              <button type="button" class="btn btn--cart">
+              <button type="button" class="btn btn--cart" data-id="monarchs" data-title="Theory11 Monarchs" data-price="1190">
                 Добавить в корзину
               </button>
             </div>
@@ -83,7 +83,7 @@
               <div class="card__price">
                 <span class="price">540&nbsp;₽</span>
               </div>
-              <button type="button" class="btn btn--cart">
+              <button type="button" class="btn btn--cart" data-id="bee" data-title="Bee Original" data-price="540">
                 Добавить в корзину
               </button>
             </div>
@@ -99,7 +99,7 @@
               <div class="card__price">
                 <span class="price">620&nbsp;₽</span>
               </div>
-              <button type="button" class="btn btn--cart">
+              <button type="button" class="btn btn--cart" data-id="tally-ho" data-title="Tally-Ho Blue" data-price="620">
                 Добавить в корзину
               </button>
             </div>
@@ -128,6 +128,20 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal" id="cartModal">
+    <div class="modal__dialog">
+      <button type="button" class="modal__close" data-close aria-label="Закрыть">&times;</button>
+
+      <h2 class="modal__title">Корзина</h2>
+
+      <div class="cart-items" id="cartItems"></div>
+
+      <div class="cart-total" id="cartTotal">Итого: 0&nbsp;₽</div>
+
+      <button type="button" class="btn btn--primary cart-checkout" id="cartCheckout" hidden>Оформить заказ</button>
+    </div>
+  </div>
 
   <div class="modal" id="orderModal">
     <div class="modal__dialog">
@@ -160,6 +174,7 @@
     </div>
   </div>
 
+  <script src="js/templates.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
